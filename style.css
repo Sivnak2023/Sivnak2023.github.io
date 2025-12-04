@@ -41,11 +41,11 @@ main{
     width: 40px;
 }
 
-.header_boton .boton_switch{
+.header__boton .boton__switch{
     width: 250px;
 }
 
-.boton-header_boton .barra-header_barra{
+.boton-header__boton .barra-header__barra{
     background-color:black;
 }
 
@@ -107,22 +107,16 @@ main{
     padding-left: 20px;
 }
 .tiempo{
-    width: 300px;
     background-image: url("Hollow Knight Wiki (Community)//Sidebar Image.png");
+    height:850px;
+    width:379px;
 }
 
 .tiempo__img-inicial{
-    display:flex;
-    flex-wrap:wrap;
+    display:inline-flex;
+    flex-wrap:nowrap;
 }
 
 .tiempo__contain{
     display:flex;
-}
-.tiempo__contain{
-    width: inherit;
-}
-.tiempo__texto{
-    display:flex;
-    flex-wrap:wrap;
 }
