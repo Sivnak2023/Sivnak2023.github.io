@@ -125,5 +125,71 @@ main{
 
 .tiempo__contain{
     display:flex;
-    margin:30px;
+    align-items: center;
+}
+
+@keyframes anim1{
+    0%{
+        transform:scale(1);
+    }
+    25%{
+        transform:scale(1.1);
+    }
+
+    50%{
+        transform:scale(1.2);
+    }
+    75%{
+        transform:scale(1.35);
+    }
+    100%{
+        transform:scale(1.5);
+    }
+}
+@keyframes anim2{
+    0%{
+        transform:scale(1);
+    }
+    25%{
+        transform:scale(1.01);
+    }
+
+    50%{
+        transform:scale(1.02);
+    }
+    75%{
+        transform:scale(1.03);
+    }
+    100%{
+        transform:scale(1.05);
+    }
+}
+@keyframes anim3{
+    0%{
+        transform:rotateY(0turn);
+    }
+    50%{
+        transform:rotateY(1turn);
+    }
+    100%{
+        transform:rotateY(0turn);
+    }
+}
+
+/*.header a {
+    transform: scale(1);
+    animation-name: anim1;
+    animation-duration: 0.6s;        
+    animation-iteration-count: 1;    
+    animation-fill-mode: forwards;
+}*/
+
+.header a:hover{
+    animation: anim1 0.25s forwards;
+}
+.main-Personajes__Texto:hover , .main-Logros__Texto:hover , .tiempo__img:hover , .tiempo__texto:hover{
+    animation: anim2 0.25s forwards;
+}
+.tiempo__img:active,.main-Main__img:active{
+    animation: anim3 1s forwards;
 }
