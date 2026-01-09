@@ -13,6 +13,7 @@ header{
     justify-content: space-around;
     align-items: center;
 }
+
 body{
     width: 90%;
     display:flex;
@@ -20,6 +21,7 @@ body{
     background-color:rgb(0, 0, 22);
     color:white;
 }
+
 a{
     text-decoration: none;
     font-size:16px;
@@ -30,9 +32,11 @@ main{
     display:flex;
     flex-wrap:nowrap;
 }
+
 .ocho{
     width: 80%;
 }
+
 .dos{
     width: 20%;
 }
@@ -49,26 +53,30 @@ main{
     background-color:black;
 }
 
+/* RUTA CORREGIDA */
 .main-Main{
     width: 800px;
-    background-image:url("Hollow Knight Wiki (Community)/Main Background.png");
+    background-image:url("Assets/images/main-background.png");
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: nowrap;
 }
+
 .main-Main__contain{
     width: 50%;
 }
+
 .main-Main__contain img{
     width: 400px;
-
 }
+
 .main-Main__description {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
 }
+
 .main-Main__img{
     display: flex;
     flex-wrap: wrap;
@@ -79,6 +87,7 @@ main{
     height:600px;
     padding: 10px;
 }
+
 .main-Personajes__contain{
     height:25%;
 }
@@ -87,9 +96,11 @@ main{
     height:600px;
     padding: 10px;
 }
+
 .main-Logros__contain{
     height:25%;
 }
+
 .main-Logros__img{
     position: relative;
     z-index: -1;
@@ -106,8 +117,10 @@ main{
 .main-Logros__Texto{
     padding-left: 20px;
 }
+
+/* RUTA CORREGIDA */
 .tiempo{
-    background-image: url("Hollow Knight Wiki (Community)//Sidebar Image.png");
+    background-image: url("Assets/images/sidebar-image.png");
     width:379px;
 }
 
@@ -119,6 +132,7 @@ main{
     display:inline-flex;
     flex-wrap:nowrap;
 }
+
 .tiempo__img{
     scale:70%;
 }
@@ -135,7 +149,6 @@ main{
     25%{
         transform:scale(1.1);
     }
-
     50%{
         transform:scale(1.2);
     }
@@ -146,6 +159,7 @@ main{
         transform:scale(1.5);
     }
 }
+
 @keyframes anim2{
     0%{
         transform:scale(1);
@@ -153,7 +167,6 @@ main{
     25%{
         transform:scale(1.01);
     }
-
     50%{
         transform:scale(1.02);
     }
@@ -164,6 +177,7 @@ main{
         transform:scale(1.05);
     }
 }
+
 @keyframes anim3{
     0%{
         transform:rotateY(0turn);
@@ -176,20 +190,18 @@ main{
     }
 }
 
-/*.header a {
-    transform: scale(1);
-    animation-name: anim1;
-    animation-duration: 0.6s;        
-    animation-iteration-count: 1;    
-    animation-fill-mode: forwards;
-}*/
-
 .header a:hover{
     animation: anim1 0.25s forwards;
 }
-.main-Personajes__Texto:hover , .main-Logros__Texto:hover , .tiempo__img:hover , .tiempo__texto:hover{
+
+.main-Personajes__Texto:hover,
+.main-Logros__Texto:hover,
+.tiempo__img:hover,
+.tiempo__texto:hover{
     animation: anim2 0.25s forwards;
 }
-.tiempo__img:active,.main-Main__img:active{
+
+.tiempo__img:active,
+.main-Main__img:active{
     animation: anim3 1s forwards;
 }
